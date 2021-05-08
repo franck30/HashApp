@@ -1,0 +1,2 @@
+rootProject.name = "HashApp"
+include ':app'
