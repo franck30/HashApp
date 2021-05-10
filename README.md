@@ -7,11 +7,9 @@ android app that generate hash key based on selected algorithm
 - Presentation (for UI logic, with MVVM)
 
 ## Librairies and technologies used
-- Room library for saving news in application
-- Retrofit used to make api calls
-- glide for loading images
 - Viewmodel and liveData
 - Kotlin coroutines
+- androidx.fragment
 
 
 ## Screenshots
