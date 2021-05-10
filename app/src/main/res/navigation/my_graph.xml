@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.franckcarin.hashapp.HomeFragment"
-        android:label="Home"
+        android:label="HashApp"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_successFragment"
@@ -21,13 +21,14 @@
     <fragment
         android:id="@+id/successFragment"
         android:name="com.franckcarin.hashapp.SuccessFragment"
-        android:label="Success"
+        android:label="HashApp"
         tools:layout="@layout/fragment_success">
         <action
             android:id="@+id/action_successFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
         <argument
             android:name="hash"
+            android:defaultValue="Empty"
             app:argType="string" />
     </fragment>
 </navigation>

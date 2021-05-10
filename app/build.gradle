@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
 //    id 'kotlin-android-extensions'
 //    id 'kotlin-kapt'
+    id "androidx.navigation.safeargs.kotlin"
 }
 
 android {
@@ -10,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.franckcarin.hashapp"
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"

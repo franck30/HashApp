@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.os.Message
 import android.view.*
 import android.widget.ArrayAdapter
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -52,8 +53,8 @@ class HomeFragment : Fragment() {
         } else {
             lifecycleScope.launch {
                 applyAnimations()
-                getHashData()
-                navigateToSuccess()
+
+                navigateToSuccess(getHashData())
             }
         }
     }
@@ -88,8 +89,9 @@ class HomeFragment : Fragment() {
         delay(1500)
     }
 
-    private fun navigateToSuccess() {
-        findNavController().navigate(R.id.action_homeFragment_to_successFragment)
+    private fun navigateToSuccess(hash: String) {
+        val directions = HomeFragmentDirections.actionHomeFragmentToSuccessFragment(hash)
+        findNavController().navigate(directions)
     }
 
     private fun showSnackBar(message: String) {
@@ -100,6 +102,7 @@ class HomeFragment : Fragment() {
 
         )
         snackBar.setAction("Okay") {}
+        snackBar.setActionTextColor(ContextCompat.getColor(requireContext(), R.color.blue))
         snackBar.show()
     }
 
@@ -117,6 +120,13 @@ class HomeFragment : Fragment() {
         val algorithm = binding.autoCompleteTextView.text.toString()
         val plainText = binding.plainText.text.toString()
         return homeViewModel.getHash(plainText, algorithm)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val hashAlgorithms = resources.getStringArray(R.array.hash_algorithms)
+        val arrayAdapter = ArrayAdapter(requireContext(),R.layout.drop_down_item, hashAlgorithms)
+        binding.autoCompleteTextView.setAdapter(arrayAdapter)
     }
 
 }

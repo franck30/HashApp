@@ -51,6 +51,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:inputType="none"
+
             android:text="SHA-256"
             android:textColor="@color/white"
             android:textStyle="bold"
