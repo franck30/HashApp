@@ -10,7 +10,7 @@ android app that generate hash key based on selected algorithm
 - Viewmodel and liveData
 - Kotlin coroutines
 - jetpack navigation component
-- -viewbinding
+- viewbinding
 - safe arg plugin
 
 
