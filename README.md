@@ -9,7 +9,8 @@ android app that generate hash key based on selected algorithm
 ## Librairies and technologies used
 - Viewmodel and liveData
 - Kotlin coroutines
-- androidx.fragment
+- jetpack navigation component
+- safe arg plugin
 
 
 ## Screenshots
