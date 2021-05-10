@@ -18,5 +18,5 @@ android application using news-api.org to get news
 
 
 ## Screenshots
- <img size src="https://github.com/franck30/News-aggregator/blob/master/Phone%20Screenshot%201.jpg" alt="ArchiTecture logo" width="400" height="700"/> <img size src="https://github.com/franck30/News-aggregator/blob/master/Phone%20Screenshot%202.jpg" alt="ArchiTecture logo" width="400" height="700"/>
- <img size src="https://github.com/franck30/News-aggregator/blob/master/Phone%20Screenshot%203.jpg" alt="ArchiTecture logo" width="400" height="700"/><img size src="https://github.com/franck30/News-aggregator/blob/master/Phone%20Screenshot%204.jpg" alt="ArchiTecture logo" width="400" height="700"/>
+ <img size src="https://github.com/franck30/HashApp/blob/master/Phone%20Screenshot%201.jpg" alt="ArchiTecture logo" width="400" height="700"/> <img size src="https://github.com/franck30/HashApp/blob/master/Phone%20Screenshot%203.jpg" alt="ArchiTecture logo" width="400" height="700"/>
+ <img size src="https://github.com/franck30/HashApp/blob/master/Phone%20Screenshot%204.jpg" alt="ArchiTecture logo" width="400" height="700"/><img size src="https://github.com/franck30/HashApp/blob/master/Phone%20Screenshot%205.jpg" alt="ArchiTecture logo" width="400" height="700"/>
